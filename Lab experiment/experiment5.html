@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f4f4f4; }
+        .container { background-color: #fff; padding: 20px 40px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); width: 400px; }
+        h2 { text-align: center; color: #333; }
+        form div { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; font-size: 0.9em;}
+        input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="number"], select, textarea { width: 100%; padding: 8px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
+        .radio-group label { display: inline; font-weight: normal; margin-right: 15px; }
+        .button-group { text-align: right; margin-top: 20px; }
+        .button-group button { padding: 10px 15px; margin-left: 10px; border: none; border-radius: 4px; cursor: pointer; }
+        .button-group .submit { background-color: #5cb85c; color: white; }
+        .button-group .clear { background-color: #f0ad4e; color: white; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Registration Form</h2>
+    
+    <form method="post" action="submit.html"> 
+        
+        <div>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+        </div>
+
+        <div>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="abc@example.com" required>
+        </div>
+
+        <div>
+            <label for="phone">Contact No:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <div>
+            <label>Gender:</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="course">Select Course:</label>
+            <select id="course" name="course" required>
+                <option value="" disabled selected>Select a course</option>
+                <option value="cs">Computer Science</option>
+                <option value="ee">Electrical Engineering</option>
+                <option value="me">Mechanical Engineering</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" placeholder="Enter your address"></textarea>
+        </div>
+
+        <div class="button-group">
+            <button type="submit" class="submit">Register</button>
+            <button type="reset" class="clear">Clear</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
