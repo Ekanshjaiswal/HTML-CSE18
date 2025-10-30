@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Timetable - Experiment 3</title>
+    <style>
+        /* Basic CSS for better presentation (optional but recommended) */
+        table {
+            width: 80%; /* Adjust as needed */
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        /* Style for the nested table to make it distinct */
+        .nested-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+        }
+        .nested-table th, .nested-table td {
+            border: 1px solid #ccc;
+            padding: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Experiment-3: College Timetable</h1>
+
+    <table border="1">
+        <caption>Class Timetable (with Rowspan, Colspan, and Nested Tables)</caption>
+
+        <thead>
+            <tr>
+                <th>Day/Time</th>
+                <th>8:00 - 9:00</th>
+                <th>9:00 - 10:00</th>
+                <th>10:00 - 11:00</th>
+                <th>11:00 - 12:00</th>
+                <th rowspan="6">Break</th>
+                <th>1:00 - 2:00</th>
+                <th>2:00 - 3:00</th>
+                <th>3:00 - 4:00</th>
+                <th>4:00 - 5:00</th>
+            </tr>
+            <tr>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th colspan="4">College Timetable - CSE Department</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Monday</th>
+                <td>Mathematics</td>
+                <td>English</td>
+                <td>Physics</td>
+                <td>Break</td>
+                <td>Computer Lab</td>
+                <td>Sport</td>
+                <td>Library</td>
+            </tr>
+
+            <tr>
+                <th>Tuesday</th>
+                <td>Mathematics</td>
+                <td>C Programming</td>
+                <td>Physics</td>
+                <td>Break</td>
+                <td>Electronics Lab</td>
+                <td colspan="2">Lab Records</td>
+            </tr>
+
+            <tr>
+                <th>Wednesday</th>
+                <td>Mathematics</td>
+                <td>English</td>
+                <td>Physics</td>
+                <td>Break</td>
+                <td>Computer Networks</td>
+                <td>
+                    <table class="nested-table">
+                        <tr>
+                            <td colspan="2">Lab Records</td>
+                        </tr>
+                        <tr>
+                            <td>Batch A</td>
+                            <td>DBHS Lab</td>
+                        </tr>
+                        <tr>
+                            <td>Batch B</td>
+                            <td>CN Lab</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>DBHS Lab</td>
+            </tr>
+
+            <tr>
+                <th>Thursday</th>
+                <td>Workshop</td>
+                <td>Physics</td>
+                <td>Break</td>
+                <td>Mathematics</td>
+                <td>English</td>
+                <td>Seminar</td>
+            </tr>
+
+            <tr>
+                <th>Friday</th>
+                <td>Computer Networks</td>
+                <td>English</td>
+                <td>Physics</td>
+                <td>Break</td>
+                <td>Project Work</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
