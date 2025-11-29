@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Profile Cards - Flexbox</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            display: flex; 
+            justify-content: center;  
+            align-items: center;
+            gap: 25px; 
+            border: 2px solid black;
+            padding: 30px;
+            background: white;
+        }
+
+        .card {
+            width: 220px;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            text-align: center;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .circle {
+            width: 90px;
+            height: 90px;
+            background: blue;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .name {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        
+        <div class="card">
+            <div class="circle">EJ</div>
+            <div class="name">Ekansh Jaiswal</div>
+            <p>B.Tech - CSE</p>
+            <p>Roll No: 21CS1007</p>
+            <p>1st Year</p>
+        </div>
+
+        
+        <div class="card">
+            <div class="circle">GG</div>
+            <div class="name">Gagan Garg</div>
+            <p>B.Tech - CSE</p>
+            <p>Roll No: 21CS1012</p>
+            <p>1st Year</p>
+        </div>
+
+        
+        <div class="card">
+            <div class="circle">ET</div>
+            <div class="name">Eklavya Tomar</div>
+            <p>B.Tech - CSE</p>
+            <p>Roll No: 21CS1009</p>
+            <p>1st Year</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
