@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navigation Menu</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+        }
+
+        
+        header {
+            display: block;
+            width: 100%;
+            background-color: #d3d3d3;
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+        header h2 {
+            float: right;
+            margin: 0;
+            color: black;
+        }
+
+        header h2 span {
+            color: red; 
+        }
+
+        
+        .clear {
+            clear: both;
+        }
+
+        
+        .menu a {
+            display: inline-block;
+            background: lightblue;
+            margin: 5px;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: darkblue;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        
+        .bottom-menu a {
+            display: inline-block;
+            float: left;
+            background: lightgreen;
+            margin: 5px;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: darkgreen;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        
+        .clear-bottom {
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>My <span>Website </span>Navigation</h2>
+        <div class="clear"></div>
+    </header>
+
+    
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+    
+    <div class="bottom-menu">
+        <a href="#">Dashboard</a>
+        <a href="#">Profile</a>
+        <a href="#">Messages</a>
+        <a href="#">Logout</a>
+    </div>
+
+    <div class="clear-bottom"></div>
+
+</body>
+</html>
+
